@@ -4,7 +4,7 @@ $conn = mysql_connect('localhost', root, 'happy123', 'testdb');
 if($_REQUEST['name']){
 	$name = $_REQUEST['name'];
 	$email = $_REQUEST['email'];
-	$gender = $_REQUEST['name'];
+	$gender = $_REQUEST['gender'];
 	$comm = $_REQUEST['comm'];
 	$password = $_REQUEST['password'];
 
