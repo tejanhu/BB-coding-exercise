@@ -9,7 +9,7 @@ $happy_to_receive = $_POST['happy_to_receive'];
 $password = $_POST['password'];
 
 if(mysql_query
-	("INSERT INTO user VALUES
+	("INSERT INTO 'user' VALUES
 		('$name','$email','$gender','$happy_to_receive','$password')")){
 	echo "Successfully Inserted";
 }
