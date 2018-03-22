@@ -1,5 +1,5 @@
 <?php
-$conn = mysql_connect('localhost', root, 'happy123', 'testdb');
+$conn = mysqli_connect('localhost', root, 'happy123', 'testdb');
 
 if($_REQUEST['name']){
 	$name = $_REQUEST['name'];
@@ -8,7 +8,7 @@ if($_REQUEST['name']){
 	$comm = $_REQUEST['comm'];
 	$password = $_REQUEST['password'];
 
-	$q = "insert into user values('$name','$email','$gender','$comm','$password')";
+	$q = "insert into user values('','$name','$email','$gender','$comm','$password')";
 
 	$query = mysqli_query($conn, $q);
 
