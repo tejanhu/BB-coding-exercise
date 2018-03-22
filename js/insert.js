@@ -9,7 +9,7 @@ $(document).ready(function(e){
 		$.ajax({
 			type 	:'POST',
 			data 	:(name:name, email:email, gender:gender, comm:comm, password:password),
-			url 	:"insert.php", 									//php file where data is processed
+			url 	:"dbConnect.php", 									//php file where data is processed
 			success	: function(res){
 				alert(res);
 			}
