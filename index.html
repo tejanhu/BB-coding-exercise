@@ -4,13 +4,13 @@
 	<meta charset="UTF-8">
 	<title>HTML Form Exercise</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script src="js/insert.js"></script>
-
-
+	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 	<div class="container">
+		<div class="jumbotron">
+			<h1 id="jumbo-title"><i class="fab fa-wpforms"></i> Ajax Form</h1>
+		</div>
 		<form id="myHTMLForm">
 			<div class="form-group">
 				<label for="inputName">Name</label>
@@ -33,11 +33,12 @@
 				<input type="password" class="form-control" name="password" id="inputPassword" placeholder="Password"/>
 			</div>
 			<button id="submit-btn" type="button" class="btn btn-primary">Submit</button>
-		</form>
-
-		<span id="res"></span>		
+		</form>	
 	</div>
 
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="js/insert.js"></script>
 	
 </body>
 </html>

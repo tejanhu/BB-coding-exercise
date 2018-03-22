@@ -13,7 +13,10 @@ if($_REQUEST['name']){
 	$query = mysqli_query($conn, $q);
 
 	if($query){
-		echo 'data successfully inserted';
+		echo 'Successfully Inserted Data';
+	}
+	else{
+		echo 'Insertion Failed';
 	}
 }
 

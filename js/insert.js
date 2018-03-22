@@ -12,7 +12,10 @@ $(document).ready(function(){
 			data 	:{name:name, email:email, gender:gender, comm:comm, password:password},
 			url 	:"dbConnect.php", 									//php file where data is processed
 			success	: function(res){
+				//confirms insertion succeeded or failed
 				alert(res);
+				//refreshes page
+				window.location.reload();
 
 			}
 		})
